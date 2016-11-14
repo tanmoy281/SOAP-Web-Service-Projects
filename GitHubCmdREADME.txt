@@ -40,9 +40,9 @@ now open the project in IDE(eclipse) and make necessary changes
 
 now go to the location of file(in cmd) which is added or changed 
 
-git status
-
 git add Changed_file_name_with_extension
+
+git status    (using this command you would be able to see the files in green color which you will be able to commit)
 
 git commit -m "some comment"
 
