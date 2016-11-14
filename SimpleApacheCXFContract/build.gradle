@@ -1,0 +1,57 @@
+buildscript{
+    repositories{
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'no.nils:wsdl2java:0.10'
+    }
+}
+
+apply plugin: 'java'
+apply plugin :'no.nils.wsdl2java'
+
+
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework:spring-core:4.1.6.RELEASE'
+	compile group: 'org.apache.cxf', name: 'cxf-tools-wsdlto-core', version: '3.1.8'
+
+	
+}
+
+sourceSets {
+	main {
+		java {
+			srcDir 'src'
+		}
+		resources {
+            srcDir 'src'
+        }
+	}
+	test {
+		java {
+		srcDir 'test'
+		}
+	}
+	
+}
+
+
+wsdl2java{
+    wsdlsToGenerate = [
+            ['-p','generatedSource.com.tanmoy.mypackage', '-autoNameResolution', "$projectDir/src/main/resources/wsdl/hello.wsdl"]
+    ]
+    generatedWsdlDir = file("$projectDir/src/")
+    wsdlDir = file("$projectDir/src/main/resources/wsdl")
+    locale = Locale.ENGLISH
+}
+
+wsdl2javaExt {
+    cxfVersion = "3.1.8"
+}

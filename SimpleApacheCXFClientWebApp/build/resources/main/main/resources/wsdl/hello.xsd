@@ -1,0 +1,29 @@
+<xs:schema xmlns:tns="http://service/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	version="1.0" targetNamespace="http://service/">
+	<xs:element name="addTwo" type="tns:addTwo" />
+	<xs:element name="addTwoResponse" type="tns:addTwoResponse" />
+	<xs:element name="deleteTwo" type="tns:deleteTwo" />
+	<xs:element name="deleteTwoResponse" type="tns:deleteTwoResponse" />
+	<xs:complexType name="deleteTwo">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="deleteTwoResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addTwo">
+		<xs:sequence>
+			<xs:element name="arg0" type="xs:int" />
+			<xs:element name="arg1" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="addTwoResponse">
+		<xs:sequence>
+			<xs:element name="return" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
