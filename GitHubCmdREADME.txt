@@ -38,7 +38,7 @@ now open the project in IDE(eclipse) and make necessary changes
 
 
 
-now go to the location of file(in cmd) which is added or changes 
+now go to the location of file(in cmd) which is added or changed 
 
 git status
 
