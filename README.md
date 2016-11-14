@@ -1,2 +1,2 @@
 # SOAP-Web-Service-Projects
-This will contain SOAP Web Service and Client Projects Built with Apache CXF and Spring
+This repository contains SOAP Web Service and Client Projects Built with Apache CXF ,Spring and Eclipse.
