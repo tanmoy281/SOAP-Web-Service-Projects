@@ -1,0 +1,4 @@
+include ":AddtionPojoService"
+include ":SimpleApacheCXFContract"
+include ":SimpleApacheCXFService"
+include ":SimpleApacheCXFClientWebApp"
