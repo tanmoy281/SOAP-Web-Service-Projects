@@ -1,4 +1,6 @@
 # SOAP-Web-Service-Projects
+[![Build Status](https://travis-ci.org/tanmoy281/SOAP-Web-Service-Projects.svg?branch=master)](https://travis-ci.org/tanmoy281/SOAP-Web-Service-Projects)
+
 This repository contains SOAP Web Service and Client Projects Built with Apache CXF ,Spring ,gradle and Eclipse.
 
 (read this: https://guides.github.com/introduction/flow/)
